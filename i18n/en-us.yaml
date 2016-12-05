@@ -121,6 +121,14 @@
 - id: "post.no_title"
   translation: "no title"
 
+- id: "post.word_count"
+  translation: "{{ .Count }} words"
+
+- id: "post.reading_time"
+  translation:
+    one: "{{ .Count }} minute read"
+    other: "{{ .Count }} minutes read"
+
 - id: "post.categorized_in"
   translation: "in"
 
