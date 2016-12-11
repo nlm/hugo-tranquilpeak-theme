@@ -64,3 +64,8 @@ $(document).ready(function() {
     </script>
   {{ end }}
 {{ end }}
+{{ if .Site.Params.googleAnalyticsAsync }}
+  {{ template "_internal/google_analytics_async.html" . }}
+{{ else }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
